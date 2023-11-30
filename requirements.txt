@@ -1,0 +1,6 @@
+openai
+mediapipe
+opencv-python
+numpy
+torch
+playsound

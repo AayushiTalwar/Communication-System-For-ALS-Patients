@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Requests Page</title>
+  <style>
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      gap: 10px;
+    }
+    .cell {
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .highlight-row {
+      border-color: red;
+    }
+    .highlight-cell {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="grid"></div>
+  <p id="textDisplay"></p>
+
+  <h2>State</h2>
+  <p>
+      ICE gathering state: <span id="ice-gathering-state"></span>
+  </p>
+  <p>
+      ICE connection state: <span id="ice-connection-state"></span>
+  </p>
+  <p>
+      Signaling state: <span id="signaling-state"></span>
+  </p>
+
+  <div id="media" style="display: none">
+    <h2>Media</h2>
+
+    <audio id="audio" autoplay="true"></audio>
+    <video id="video" autoplay="true" playsinline="true"></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
